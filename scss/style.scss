@@ -1,16 +1,28 @@
+/*Horizontal Rule Styling*/
+hr {
+  border-top: 1px solid #fff;
+  width: 95%;
+  float: left;
+  margin-left: 0;
+}
+
+/*APPLIED TO: Main Header and Footer*/
 .bg-plum {
   background-color: #2e006b;
   color: #fff;
 }
 
+/*APPLIED TO: Main Header Tab*/
 .bg-orange {
   background-color: #ff8758;
 }
 
+/*APPLIED TO: Main Header Tab and on Contact Page*/
 .bg-pink {
   background-color: #fc4c65;
 }
 
+/*Contact: Button Background Colors */
 .btn-pink {
   color: #fff;
   background-color: #fc4c65;
@@ -22,12 +34,15 @@
   background-color: #fff;
 }
 
+
+/*Main Header: My Image*/
 #main-header {
   img {
     width: 100%;
     height: 100%;
   }
 
+  /*Main Header Tabs: Icons, House, Hat, File Folder, and Envelope*/
   .port-item {
     width: 30%;
     .fa {
@@ -41,6 +56,7 @@
   }
 }
 
+/*Main Header Links: Social Media Links inside Header*/
 #socialLinks > div > a {
   color: #fff;
 }
@@ -49,10 +65,12 @@
   color: #fc4c65;
 }
 
+/*Main Header: 'Web Developer' Title Size*/
 #title {
   font-size: 20px;
 }
 
+/*Works/Portfolio: Styling for links on Portfolio section*/
 .lead > a {
   padding: 0px 4px;
   color: rgb(250, 29, 63);
@@ -63,23 +81,32 @@
   text-decoration: none;
 }
 
-.card-title > a {
-  color: #212529;
-}
+/* I got this css by going to http://ashleydw.github.io/lightbox/, 
+   then scrolling down to image gallery example 
+   right-clicking, and inspecting element - particulary the modal's css */
 
-.card-title > a:hover {
-  color: #fc4c65;
-  text-decoration: none;
-}
+   .ekko-lightbox-nav-overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+  }
 
+/*Contact: This is to keep "message sent" alert HIDDEN until user has actually sent the message*/
 .alert {
   display: none;
 }
 
+/*Contact: This is for keeping the x-scroll bar hidden*/
 .textarea {
   overflow: hidden;
 }
 
+/*Main Footer: This is for the main footer. Specifically the color of the links in the footer*/
 #main-footer > a {
   color: #fff;
   text-decoration: none;

@@ -53,3 +53,9 @@ function saveMessage(name, email, message) {
     message: message
   });
 }
+
+// Ekko Lightbox on Home Page-Image Gallery
+$(document).on('click', '[data-toggle="lightbox"]', function(event){
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
