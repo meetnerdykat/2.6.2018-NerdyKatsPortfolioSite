@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kathy Cuevas - Portfolio</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <!--Edu & Resume-->
+        <div id="eduResume" class="collapse">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>Where I've Learned</h2>
+                <p class="lead">Below are all of the resources I've discovered and use to learn about Computer Science (Programming languages, MarkUp Languages, Windows Command Line, Git and GitHub, text editors, graphics, photography...</p>
+            </div>
+            <div class="card card-body py-5">
+                <div class="card">
+                    <p class="p-2 m-2 text-center">
+                        <a class="btn btn-outline-success" href="https://www.youtube.com/user/TechGuyWeb" role="button">Traversy Media</a>
+                        <a class="btn btn-outline-success" href="https://www.youtube.com/channel/UCEQXp_fcqwPcqrzNtWJ1w9w" role="button">Logos By Nick</a>
+                        <a class="btn btn-outline-success" href="https://www.youtube.com/user/LearnWebCode" role="button">Learn Web Code</a>
+                    </p>
+                    <p class="p-2 mb-1 text-center">
+                        <a class="btn btn-outline-success" href="https://www.youtube.com/channel/UC-JQzTHQrVA8j-tamvy66fw" role="button">EJ Media</a>
+                        <a class="btn btn-outline-success" href="https://www.youtube.com/user/kudvenkat/featured" role="button">Kudvenkat</a>
+                        <a class="btn btn-outline-success" href="https://www.youtube.com/user/Conutant" role="button">Tyler Moore</a>
+                    </p>
+                </div><!--END of Card containing listing of links of learning resources-->
+            </div><!-- END of Card Body containing listing of learning resources-->
+        </div><!--END of Collapsable EDU/Resume Section-->
+
+    </div>
+    <!--closing container div-->
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+    <script>
+        $('.port-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+</body>
+
+</html>
